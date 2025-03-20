@@ -4,12 +4,11 @@
 **Gerenciador de Tarefas Compartilhado**
 
 ## Autores
-- **[Seu Nome]** - [Seu E-mail]
-- **[Outros Integrantes]** - [E-mail]
+- **Zenildo de Melo Cézar Neto** - zenildo.neto@academico.ifpb.edu.br
 
 ## Disciplinas Envolvidas
-- **Estruturas de Dados** - Prof. [Nome do Docente]
-- **Protocolos de Interconexão de Redes de Computadores** - Prof. [Nome do Docente]
+- **Estruturas de Dados** - Prof. Alex Sandro da Cunha Rêgo
+- **Protocolos de Interconexão de Redes de Computadores** - Prof. Leonidas Francisco de Lima Júnior
 
 ---
 
@@ -24,7 +23,6 @@ Este projeto é um **Gerenciador de Tarefas Compartilhado**, onde múltiplos usu
 | `server.py` | Implementação do servidor que gerencia as tarefas e responde às requisições dos clientes. |
 | `client.py` | Implementação do cliente, que permite interação com o servidor via terminal. |
 | `README.md` | Documentação do projeto, explicando seu funcionamento e como rodá-lo. |
-| `tarefas.py` | Estruturas de dados utilizadas para armazenar e gerenciar as tarefas. |
 
 ---
 
@@ -68,13 +66,19 @@ Agora você pode interagir com o sistema e gerenciar suas tarefas!
 A comunicação entre cliente e servidor segue um protocolo baseado em mensagens de texto:
 
 ### Comandos do Cliente
-| Comando | Descrição | Exemplo |
-|---------|-------------|---------|
-| `CRIAR_TAREFA <descricao>` | Cria uma nova tarefa. | `CRIAR_TAREFA "Finalizar relatório"` |
-| `EDITAR_TAREFA <id> <nova_descricao>` | Edita uma tarefa. | `EDITAR_TAREFA 1 "Revisar relatório"` |
-| `DELETAR_TAREFA <id>` | Remove uma tarefa. | `DELETAR_TAREFA 2` |
-| `LISTAR_TAREFAS` | Lista todas as tarefas. | `LISTAR_TAREFAS` |
-| `CONCLUIR_TAREFA <id>` | Marca uma tarefa como concluída. | `CONCLUIR_TAREFA 3` |
+### 🔹 Comandos do Cliente (Opções do Menu)
+
+O cliente interage com o sistema escolhendo opções no menu. Os números enviados correspondem às seguintes ações:
+
+| Número | Ação |
+|--------|--------------------------------|
+| `1` | Criar uma nova tarefa |
+| `2` | Editar uma tarefa existente |
+| `3` | Deletar uma tarefa |
+| `4` | Listar todas as tarefas |
+| `5` | Marcar uma tarefa como concluída |
+| `6` | Sair do programa |
+
 
 ### Respostas do Servidor
 | Resposta | Significado |
